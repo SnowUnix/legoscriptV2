@@ -1,2 +1,2 @@
 # legoscriptV2
-legoscripts revision
+better legoscripts, the old one sucked anyways
