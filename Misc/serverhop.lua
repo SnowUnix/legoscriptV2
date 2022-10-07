@@ -4,7 +4,7 @@ local TableIds = {}
 
 Site = game:GetService("HttpService"):JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. tostring(game.PlaceId) .. '/servers/Public?sortOrder=Asc&limit=100'))
 
-for i,v in pairs(Site.data)do
+for _,v in pairs(Site.data)do
 	if tonumber(v.MaxPlayers) == tonumber(v.playing) then else
 		table.insert(TableIds, v.id)
 	end
